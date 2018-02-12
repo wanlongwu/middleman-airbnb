@@ -1,0 +1,12 @@
+
+<div class="team">
+  <h2>This site is built by awesome people below:</h2>
+  <ul class="list-inline text-center">
+    <% ["okuma11", "wanlongwu"].each do |gh_username| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+        <h3> Github id: <%= gh_username.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+</div>
